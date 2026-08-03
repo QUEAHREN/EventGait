@@ -206,8 +206,17 @@ class BaseModel(MetaModel, nn.Module):
         if 'backbone_cfg' in model_cfg.keys():
             self.Backbone = self.get_backbone(model_cfg['backbone_cfg'])
 
+    def _should_skip_module(self, m):
+        """Check if a module should be skipped during init_parameters (e.g. frozen pretrained modules like DINO teacher)."""
+        params = list(m.parameters(recurse=False))
+        if len(params) > 0 and all(not p.requires_grad for p in params):
+            return True
+        return False
+ 
     def init_parameters(self):
         for m in self.modules():
+            if self._should_skip_module(m):
+                continue
             if isinstance(m, (nn.Conv3d, nn.Conv2d, nn.Conv1d)):
                 nn.init.xavier_uniform_(m.weight.data)
                 if m.bias is not None:
