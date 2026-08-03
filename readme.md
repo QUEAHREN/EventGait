@@ -60,14 +60,15 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_
 *Note: A complete training process on SUSTech-1K-E takes approximately 2 days using 8 × RTX 3090 (24GB) GPUs.*
 
 
-<!-- ## Citation
+## Citation
 If you find this work or our datasets useful in your research, please consider citing:
 
 ```bibtex
 @inproceedings{xu2026eventgait,
-  title={{EventGait}: Towards Robust Gait Recognition with Event Streams},
-  author={Xu, Senyan and Chen, Shuai and Shen, Chuanfu and Liu, Kean and Sun, Zhijing and Cao, Chengzhi and Fu, Xueyang},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2026}
+title={EventGait: Towards Robust Gait Recognition with Event Streams},
+author={Xu, Senyan and Chen, Shuai and Shen, Chuanfu and Liu, Kean and Sun, Zhijing and Cao, Chengzhi and Fu, Xueyang},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+pages={22323--22334},
+year={2026}
 }
-``` -->
+```
