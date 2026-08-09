@@ -29,6 +29,7 @@
 
 ## Updates
 
+- [Aug 9, 2026] 🔥SUSTech1K-E dataset is available at [here](https://opendatalab.org.cn/noahshen/SUSTech1K/tree/main/SUSTech1K-E)
 - [May 3, 2026] 🚀 Code release. The datasets will be coming soon.
 
 ## Dependencies and Installation
@@ -46,7 +47,8 @@ pip install -r requirements.txt
 
 We evaluate our method on two newly proposed event-based gait benchmarks: **SUSTech1K-E** and **CCGR-Mini-E**. 
 
-*The datasets and corresponding preprocessing scripts are currently being organized and will be released publically soon. Please stay tuned for the download links!😊*
+- SUSTech1K-E is available at [here](https://opendatalab.org.cn/noahshen/SUSTech1K/tree/main/SUSTech1K-E).
+- CCGR-MINI-E will be coming soon.
 
 
 
