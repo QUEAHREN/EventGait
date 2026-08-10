@@ -29,7 +29,7 @@
 
 ## Updates
 
-- [Aug 9, 2026] 🔥SUSTech1K-E dataset is available at [here](https://opendatalab.org.cn/noahshen/SUSTech1K/tree/main/SUSTech1K-E)
+- [Aug 9, 2026] 🔥SUSTech1K-E dataset is available at [here](https://opendatalab.org.cn/noahshen/SUSTech1K/tree/main/SUSTech1K-E).
 - [May 3, 2026] 🚀 Code release. The datasets will be coming soon.
 
 ## Dependencies and Installation
@@ -48,6 +48,17 @@ pip install -r requirements.txt
 We evaluate our method on two newly proposed event-based gait benchmarks: **SUSTech1K-E** and **CCGR-Mini-E**. 
 
 - SUSTech1K-E is available at [here](https://opendatalab.org.cn/noahshen/SUSTech1K/tree/main/SUSTech1K-E).
+  The dataset is organized into two subsets:
+  ```txt
+    SUSTech1K-E/
+  ├── SUSTech1K-E__Raw/        # Raw asynchronous event streams
+  └── SUSTech1K-E__Voxel/      # Voxel grid representations at 180 fps
+  ```
+  
+  `SUSTech1K-E__Raw` (~158GB): Contains the original asynchronous event streams directly produced by the [v2e](https://github.com/SensorsINI/v2e) simulation pipeline. Each event is encoded as a tuple (`x, y, t, p`), where (`x, y`) denotes the pixel coordinate, `t` is the timestamp in microseconds, and `p` ∈ {+1, −1} indicates the polarity (brightness increase or decrease).
+  
+  `SUSTech1K-E__Voxel` (~28GB): Contains voxel grid representations accumulated at 180 fps. Events are discretized into fixed-size spatiotemporal bins with a spatial resolution of 128×128.
+  
 - CCGR-MINI-E will be coming soon.
 
 
