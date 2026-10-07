@@ -60,7 +60,13 @@ We evaluate our method on two newly proposed event-based gait benchmarks: **SUST
   
   `SUSTech1K-E__Voxel` (~28GB): Contains voxel grid representations accumulated at 180 fps. Events are discretized into fixed-size spatiotemporal bins with a spatial resolution of 128×128.
   
-- CCGR-MINI-E will be coming soon.
+- CCGR-MINI-E dataset is available at [here](https://openxlab.org.cn/datasets/shuaichen/CCGR-MINI-E/tree/main).
+  The dataset is organized into two subsets:
+  ```txt
+    CCGR-MINI-E/
+  ├── CCGR-MINI-E__raw__dark/        # The original asynchronous event streams were directly produced by v2e under low-light conditions.
+  └── CCGR-MINI-E__raw__normal/      # The original asynchronous event streams were directly produced by v2e under normal-light conditions.
+  ```
 
 
 
