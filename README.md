@@ -29,6 +29,7 @@
 
 ## Updates
 
+- [Oct 7, 2026] 🔥CCGR-MINI-E dataset is available at [here](https://openxlab.org.cn/datasets/shuaichen/CCGR-MINI-E/tree/main).
 - [Aug 9, 2026] 🔥SUSTech1K-E dataset is available at [here](https://opendatalab.org.cn/noahshen/SUSTech1K/tree/main/SUSTech1K-E).
 - [May 3, 2026] 🚀 Code release. The datasets will be coming soon.
 
