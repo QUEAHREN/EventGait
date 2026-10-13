@@ -539,7 +539,7 @@ def evaluate_CCGR_MINI(data, dataset, metric='euc'):
 
     import json
     gallery_sets = json.load(
-        open('./datasets/CCGR-MINI/CCGR-MINI_Lite.json', 'rb'))['GALLERY_SET']
+        open('./datasets/CCGR-MINI/CCGR-MINI_E.json', 'rb'))['GALLERY_SET']
     probe_mask = []
     for id, ty, sq in zip(labels, cams, time_seqs):
         id = str(int(id) - 1057)
